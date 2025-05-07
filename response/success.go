@@ -8,7 +8,7 @@ import (
 type SuccessResponse struct {
 	Message string `json:"message"`
 	Status  int    `json:"status"`
-	Data    any    //cualquier cosa
+	Data    any `json:"data"`    //cualquier cosa
 }
 
 func OK(message string, data any) Response {
